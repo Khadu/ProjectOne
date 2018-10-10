@@ -1,5 +1,4 @@
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -42,7 +41,7 @@ public final class NumberWordsApplication {
 		reader = new BufferedReader( new InputStreamReader( System.in ) ) ;
 	}
 	
-	public void execute() {
+	public void execute() throws IOException {
 		while( true ) {
 			try {
 				System.out.println( "\nEnter number (0 to exit): " ) ;
@@ -60,7 +59,7 @@ public final class NumberWordsApplication {
 		}
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		System.out.println("Running Test Cases");
 		Result result = JUnitCore.runClasses(NumberWordsTests.class);					

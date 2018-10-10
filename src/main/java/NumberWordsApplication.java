@@ -3,9 +3,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import org.junit.*;
 import org.junit.runner.JUnitCore;
-import org.junit.runner.Result;
-import org.junit.runner.notification.Failure;
 
 public final class NumberWordsApplication {
 	private NumberWords numberWords ;
@@ -61,12 +60,12 @@ public final class NumberWordsApplication {
 
 	public static void main(String[] args) throws IOException {
 		
-		System.out.println("Running Test Cases");
-		Result result = JUnitCore.runClasses(NumberWordsTests.class);					
-		for (Failure failure : result.getFailures()) {							
-			System.out.println(failure.toString());					
-		}		
-		System.out.println("Result = "+result.wasSuccessful());
+//		System.out.println("Running Test Cases");
+//		Result result = JUnitCore.runClasses(NumberWordsTests.class);					
+//		for (Failure failure : result.getFailures()) {							
+//			System.out.println(failure.toString());					
+//		}		
+//		System.out.println("Result = "+result.wasSuccessful());
 		new NumberWordsApplication().execute() ;
 		
 	}

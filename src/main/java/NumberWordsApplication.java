@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import org.junit.*;
-import org.junit.runner.JUnitCore;
+
 
 public final class NumberWordsApplication {
 	private NumberWords numberWords ;

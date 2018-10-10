@@ -54,7 +54,7 @@ public final class NumberWordsApplication {
 				}
 				numberWords=new NumberWords();
 				numberWords.toWords(number);
-			} catch ( NumberFormatException | IOException e ) {
+			} catch ( NumberFormatException e ) {
 				System.out.println( "Invalid number" ) ;
 			}
 		}
